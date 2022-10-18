@@ -1,0 +1,54 @@
+# Easier navigation: .., ..., ~
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias dl="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias ctf="cd ~/Documents/CTFs"
+alias doc="cd ~/Documents"
+alias ero="cd ~/Documents/Writing/Ero"
+alias notes="cd ~/Documents/Notes"
+
+# ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
+
+# Misc aliases
+alias c='clear'
+
+# Notes / Writing 
+#alias nero='nvim ~/Documents/Writing/Ero/temp.txt'
+#alias note='nvim ~/Documents/Notes/temp.txt'
+#alias todo='nvim ~/Documents/Notes/todo.txt'
+
+# Docker aliases
+alias dps='docker ps -a'
+
+# Git aliases
+alias gpush='git push'
+alias gpull='git pull'
+alias gb='git branch'
+alias gs='git status'
+alias gcm='git commit'
+
+#tor
+alias tor='cd $HOME/Documents/Tools/tor/tor-browser_en-US/ && ./start-tor-browser.desktop'
+
+# be nice
+alias pls=sudo
+
+# Stopwatch
+alias timer='echo "Timer started. Stop with Ctrl-D." && date && time cat && date'
+
+# System udpates
+alias update='sudo apt-get update; sudo apt-get upgrade; sudo apt autoremove'
+
+# File size
+alias fs="stat -f \"%z bytes\""
+
+# Empty the Trash on all mounted volumes and the main HDD
+alias yeet="sudo rm -rfv ~/.Trash"
